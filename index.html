@@ -13,10 +13,12 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              colorPrimary: "rgba(30, 30, 30, 0.5)",
+              colorPrimary: "rgba(30, 30, 30, 1)",
+              colorSecondary: "rgba(30, 30, 30, 0.5)",
             },
             fontFamily: {
               Quella: ["Quella", "sans-serif"],
+              Poppins: ["Poppins", "sans-serif"],
             },
           },
         },
@@ -30,18 +32,25 @@
     ></script>
 
     <!-- cdnfonts.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link href="https://fonts.cdnfonts.com/css/quella" rel="stylesheet" />
   </head>
-  <body>
-    <header class="mx-auto max-w-screen-xl border-2 mt-12">
+  <body class="font-Poppins text-colorPrimary">
+    <header class="mx-auto max-w-screen-xl mt-12">
+      <!-- Navigation Bar -->
       <nav class="flex justify-between items-center">
         <!-- left -->
         <div class="flex gap-24">
           <a class="text-2xl font-Quella" href="">GREENMIND</a>
           <div class="flex items-center gap-12 text-lg font-medium">
             <a href="">Home</a>
-            <a class="text-colorPrimary" href="">Products</a>
-            <a class="text-colorPrimary" href="">Contacts</a>
+            <a class="text-colorSecondary" href="">Products</a>
+            <a class="text-colorSecondary" href="">Contacts</a>
           </div>
         </div>
 
@@ -53,9 +62,75 @@
           <img src="icons/FilterRight.png" alt="" />
         </div>
       </nav>
+
+      <!-- Banner Section -->
+      <section class="mt-12">
+        <div class="bg-[#C1DCDC] rounded-3xl flex">
+          <!-- text container -->
+          <div class="pt-12 pl-12 mb-32">
+            <h1 class="text-[4rem] font-extrabold text-black">
+              Buy your dream plants
+            </h1>
+            <!-- Numbers -->
+            <div
+              class="inline-flex justify-center items-center gap-12 mb-12 mt-6"
+            >
+              <!-- species -->
+              <div>
+                <h3 class="text-[2rem] font-medium">50+</h3>
+                <p class="text-lg font-medium">Plant Species</p>
+              </div>
+              <!-- vertical line -->
+              <div class="h-16 w-[1px] bg-colorPrimary"></div>
+              <!-- customers -->
+              <div>
+                <h3 class="text-[2rem] font-medium">100+</h3>
+                <p class="text-lg font-medium">Customers</p>
+              </div>
+            </div>
+            <!-- Search -->
+            <div class="flex w-[449px] rounded-xl bg-white">
+              <input
+                class="w-full border-none bg-transparent p-[18px] outline-none"
+                type="text"
+                placeholder="What are you looking for?"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass p-[14px] bg-[#C1DCDC] m-2 rounded-xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+
+          <!-- image container -->
+          <div class="relative w-full">
+            <img
+              class="absolute right-6 top-3"
+              src="icons/rounded_arrow.png"
+              alt=""
+            />
+            <img
+              class="absolute bottom-12 left-20"
+              src="icons/rounded_arrow-2.png"
+              alt=""
+            />
+            <img
+              class="absolute bottom-0 right-16"
+              src="icons/bg_round.png"
+              alt=""
+            />
+            <img
+              class="absolute bottom-0 right-14"
+              src="images/unsplash_bg_plant.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
     </header>
 
-    <main></main>
+    <main>
+      <section class="mt-12"></section>
+    </main>
 
     <footer></footer>
   </body>
