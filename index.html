@@ -4,6 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenMind</title>
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              colorPrimary: "rgba(30, 30, 30, 0.5)",
+            },
+            fontFamily: {
+              Quella: ["Quella", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/651adfbaf7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- cdnfonts.com -->
+    <link href="https://fonts.cdnfonts.com/css/quella" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <header class="mx-auto max-w-screen-xl border-2 mt-12">
+      <nav class="flex justify-between items-center">
+        <!-- left -->
+        <div class="flex gap-24">
+          <a class="text-2xl font-Quella" href="">GREENMIND</a>
+          <div class="flex items-center gap-12 text-lg font-medium">
+            <a href="">Home</a>
+            <a class="text-colorPrimary" href="">Products</a>
+            <a class="text-colorPrimary" href="">Contacts</a>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="flex gap-12 cursor-pointer">
+          <img src="icons/Cart.png" alt="" />
+          <img src="icons/Person.png" alt="" />
+          <img src="icons/Line 1.png" alt="" />
+          <img src="icons/FilterRight.png" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
 </html>
