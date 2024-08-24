@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +16,7 @@
               lightBlue: "#C1DCDC",
               colorPrimary: "rgba(30, 30, 30, 1)",
               colorSecondary: "rgba(30, 30, 30, 0.5)",
+              colorTartiary: "rgba(30, 30, 30, 0.75)",
             },
             fontFamily: {
               Quella: ["Quella", "sans-serif"],
@@ -25,6 +26,13 @@
         },
       };
     </script>
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Font Awesome -->
     <script
@@ -48,19 +56,49 @@
         <!-- left -->
         <div class="flex gap-24">
           <a class="text-2xl font-Quella" href="">GREENMIND</a>
-          <div class="flex items-center gap-12 text-lg font-medium">
-            <a href="">Home</a>
-            <a class="text-colorSecondary" href="">Products</a>
-            <a class="text-colorSecondary" href="">Contacts</a>
+          <div
+            class="flex items-center gap-12 text-lg font-medium text-colorSecondary"
+          >
+            <a
+              class="hover:text-black hover:scale-105 duration-300 ease-in-out"
+              href=""
+              >Home</a
+            >
+            <a
+              class="hover:text-black hover:scale-105 duration-300 ease-in-out"
+              href=""
+              >Products</a
+            >
+            <a
+              class="hover:text-black hover:scale-105 duration-300 ease-in-out"
+              href=""
+              >Contacts</a
+            >
           </div>
         </div>
 
         <!-- right -->
         <div class="flex gap-12 cursor-pointer">
-          <img src="icons/Cart.png" alt="" />
-          <img src="icons/Person.png" alt="" />
-          <img src="icons/Line 1.png" alt="" />
-          <img src="icons/FilterRight.png" alt="" />
+          <img
+            class="hover:scale-110 duration-300 ease-in-out"
+            src="icons/Cart.png"
+            alt=""
+          />
+          <img
+            class="hover:scale-110 duration-300 ease-in-out"
+            src="icons/Person.png"
+            alt=""
+          />
+          <img
+            class="hover:scale-110 duration-300 ease-in-out"
+            src="icons/Line 1.png"
+            alt=""
+          />
+          <img
+            class="hover:scale-110 duration-300 ease-in-out"
+            src="icons/FilterRight.png"
+            alt=""
+          />
         </div>
       </nav>
 
@@ -97,7 +135,7 @@
                 placeholder="What are you looking for?"
               />
               <i
-                class="fa-solid fa-magnifying-glass p-[14px] bg-[#C1DCDC] m-2 rounded-xl cursor-pointer"
+                class="hover:scale-105 hover:bg-slate-300 duration-300 ease-in-out fa-solid fa-magnifying-glass p-[14px] bg-[#C1DCDC] m-2 rounded-xl cursor-pointer"
               ></i>
             </div>
           </div>
@@ -141,9 +179,7 @@
             >
               Easiest way to healthy life by buying your favorite plants
             </p>
-            <button
-              class="text-lg font-medium bg-lightBlue px-6 py-3 rounded-lg"
-            >
+            <button class="btn text-lg font-medium bg-lightBlue rounded-lg">
               See more <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
@@ -151,19 +187,19 @@
           <!-- Card Container -->
           <div class="inline-flex gap-12">
             <!-- Card 1 -->
-            <div>
+            <div class="hover:scale-105 duration-700 ease-in-out">
               <img class="rounded-xl" src="images/plant-1.png" alt="" />
               <p class="text-lg font-medium mt-3 mb-2">Natural Plants</p>
               <p class="text-colorSecondary text-lg font-medium">₱ 1,400.00</p>
             </div>
             <!-- Card 2 -->
-            <div>
+            <div class="hover:scale-105 duration-700 ease-in-out">
               <img class="rounded-xl" src="images/plant-2.png" alt="" />
               <p class="text-lg font-medium mt-3 mb-2">Artificial Plants</p>
               <p class="text-colorSecondary text-lg font-medium">₱ 900.00</p>
             </div>
             <!-- Card 3 -->
-            <div>
+            <div class="hover:scale-105 duration-700 ease-in-out">
               <img class="rounded-xl" src="images/plant-3.png" alt="" />
               <p class="text-lg font-medium mt-3 mb-2">Artificial Plants</p>
               <p class="text-colorSecondary text-lg font-medium">₱ 3,500.00</p>
@@ -205,7 +241,7 @@
             <div
               class="w-24 h-24 bg-lightBlue rounded-full flex justify-center items-center"
             >
-              <img src="icons/about-1.png" alt="" />
+              <img src="icons/about-2.png" alt="" />
             </div>
             <h3 class="text-black text-lg font-bold mt-6 mb-3">
               Fast & Free Shipping
@@ -221,7 +257,7 @@
             <div
               class="w-24 h-24 bg-lightBlue rounded-full flex justify-center items-center"
             >
-              <img src="icons/about-1.png" alt="" />
+              <img src="icons/about-3.png" alt="" />
             </div>
             <h3 class="text-black text-lg font-bold mt-6 mb-3">24/7 Support</h3>
             <p class="text-colorSecondary text-lg font-medium">
@@ -231,7 +267,7 @@
         </div>
       </section>
 
-      <!-- Catagories -->
+      <!-- Catagories section -->
       <section class="mt-40">
         <div>
           <!-- Title & Description -->
@@ -260,9 +296,7 @@
                 >
                   Horem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                <button
-                  class="text-lg font-medium bg-white px-6 py-3 rounded-lg"
-                >
+                <button class="btn text-lg font-medium bg-white rounded-lg">
                   Explore <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -276,9 +310,95 @@
           </div>
         </div>
       </section>
+
+      <!-- Reviews section -->
+      <section class="pt-24 pb-[230px] relative overflow-x-hidden">
+        <div class="mx-auto max-w-screen-xl">
+          <!-- title container -->
+          <div class="flex justify-between items-center">
+            <h1 class="text-[32px] font-bold w-[40%] 2xl:w-2/6">
+              What customers say about GREEMIND?
+            </h1>
+            <img src="icons/vector_dots.png" alt="" />
+          </div>
+
+          <!-- cards container -->
+          <div class="mt-12">
+            <!-- card 1 -->
+            <div
+              class="w-[800px] h-[330px] bg-lightBlue rounded-xl p-12 relative"
+            >
+              <p class="text-lg font-medium text-colorTartiary">
+                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos.
+              </p>
+              <img
+                class="absolute bottom-[101px] left-[48px]"
+                src="icons/vector_quote.png"
+                alt=""
+              />
+              <img
+                class="absolute bottom-0 left-[13px]"
+                src="images/reviewer-1.png"
+                alt=""
+              />
+              <!-- designation -->
+              <div class="absolute bottom-[102px] left-[170px]">
+                <h2 class="text-colorPrimary text-lg font-bold">John Doe</h2>
+                <small class="text-colorSecondary text-xs font-medium"
+                  >Youtuber</small
+                >
+              </div>
+              <!-- rating -->
+              <div
+                class="absolute right-12 bottom-[120px] text-colorPrimary text-lg font-bold"
+              >
+                <i class="fa-solid fa-star"></i> 4.5
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div
+          class="absolute left-[944px] 2xl:left-[1200px] top-[240px] w-[800px] h-[330px] bg-lightBlue rounded-xl p-12"
+        >
+          <p class="text-lg font-medium text-colorTartiary">
+            Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+          <img
+            class="absolute bottom-[101px] left-[48px]"
+            src="icons/vector_quote.png"
+            alt=""
+          />
+          <img
+            class="absolute bottom-0 left-[13px]"
+            src="images/reviewer-2.png"
+            alt=""
+          />
+          <!-- designation -->
+          <div class="absolute bottom-[102px] left-[170px]">
+            <h2 class="text-colorPrimary text-lg font-bold">John Doe</h2>
+            <small class="text-colorSecondary text-xs font-medium"
+              >Youtuber</small
+            >
+          </div>
+          <!-- rating -->
+          <div
+            class="absolute right-12 bottom-[120px] text-colorPrimary text-lg font-bold"
+          >
+            <i class="fa-solid fa-star"></i> 4.5
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="mt-56 bg-lightBlue">
+    <footer class="bg-lightBlue">
       <div
         class="mx-auto max-w-screen-xl py-12 flex justify-between place-items-center"
       >
@@ -291,7 +411,7 @@
             <p class="text-lg text-colorSecondary font-medium my-6">
               We help you find your dream plant
             </p>
-            <!-- socials -->
+            <!-- socials  try: grid-flow-col -->
             <div
               class="grid grid-cols-3 justify-center place-items-center gap-6"
             >
@@ -326,21 +446,29 @@
           <!-- Container 2 -->
           <div class="flex flex-col gap-6">
             <a class="text-lg font-bold" href="">Company</a>
-            <a class="text-lg font-normal text-colorSecondary" href="">Community  </a>
+            <a class="text-lg font-normal text-colorSecondary" href=""
+              >Community
+            </a>
             <a class="text-lg font-normal text-colorSecondary" href=""
               >Career</a
             >
-            <a class="text-lg font-normal text-colorSecondary" href="">Our story</a>
+            <a class="text-lg font-normal text-colorSecondary" href=""
+              >Our story</a
+            >
           </div>
 
           <!-- Container 3 -->
           <div class="flex flex-col gap-6">
             <a class="text-lg font-bold" href="">Contact</a>
-            <a class="text-lg font-normal text-colorSecondary" href="">Getting Started</a>
+            <a class="text-lg font-normal text-colorSecondary" href=""
+              >Getting Started</a
+            >
             <a class="text-lg font-normal text-colorSecondary" href=""
               >Pricing</a
             >
-            <a class="text-lg font-normal text-colorSecondary" href="">Resources</a>
+            <a class="text-lg font-normal text-colorSecondary" href=""
+              >Resources</a
+            >
           </div>
         </div>
       </div>
